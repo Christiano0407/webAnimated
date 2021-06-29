@@ -1,0 +1,78 @@
+*,::before,::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration:none;
+    cursor: pointer;
+}
+img {
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    position: relative;
+    left: 0;
+    top:0; 
+    width: 100%;
+    height: 80px;
+}
+header h4 {
+    position: relative;
+    left: 20%;
+    top: 2rem;
+    font-size: 1.6rem;
+}
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: #ffffff;
+    transform: translate(-50%, -50%);
+}
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+/*Agregar una clase => active => js*/
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
