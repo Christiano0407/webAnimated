@@ -39,6 +39,7 @@ header h4 {
     top: 2rem;
     font-size: 1.6rem;
 }
+/* Son clave para el intro animado*/
 .intro {
     position: fixed;
     z-index: 1;
