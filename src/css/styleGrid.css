@@ -122,21 +122,38 @@ body {
 }
 
 .one {
- background-image: url();
+ background-image: url(../assets/image/play5.jpg);
+ object-fit: cover;
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
 }
 .two {
-
+  background-image: url(../assets/image/play1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .three {
-
+  background-image: url(../assets/image/play6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .four {
-
+    background-image: url(../assets/image/play3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .five {
-
+    background-image: url(../assets/image/play7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .six {
-    background-image: url();
+    background-image: url(../assets/image/play4.jpg);
     background-position: 0 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
