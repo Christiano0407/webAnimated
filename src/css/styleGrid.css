@@ -121,39 +121,62 @@ body {
    pointer-events: none;
 }
 
+.image {
+    position: relative; 
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+}
+.vertical {
+    grid-row: span 2;
+}
+.horizontal {
+    grid-column: span 2;
+}
 .one {
- background-image: url(../assets/image/play5.jpg);
- object-fit: cover;
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
+ background-image: url(../assets/image/play1.jpg);
 }
 .two {
-  background-image: url(../assets/image/play1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url(../assets/image/play5.jpg);
 }
 .three {
   background-image: url(../assets/image/play6.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .four {
     background-image: url(../assets/image/play3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .five {
     background-image: url(../assets/image/play7.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .six {
-    background-image: url(../assets/image/play4.jpg);
+    background-image: url(../assets/image/play8.jpg);
     background-position: 0 70%;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 700px) {
+    .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    }
+    .horizontal {
+     grid-column: auto / span 1;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .side-bar {
+        width: 15%;
+        color: white;
+        z-index: 10;
+        background-color: black;
+    }
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .vertical {
+        grid-row: auto / span 1;
+    }
 }
