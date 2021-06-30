@@ -3,6 +3,7 @@ Create web Animate and responsive Gallery with Javascript Vanilla
 
 ## References Javascript 
 - [Conor Bailey](https://www.youtube.com/channel/UCcNEvbajb34cXufYddZ57og)
+- [Conor Bayley_Grid](https://www.youtube.com/watch?v=QwesrYlNw4s&t=37s)
 
 ## Tips UX/UI/AI
 - [memorisely](https://www.memorisely.com/live-bootcamp/ux-ui-design-bootcamp)
