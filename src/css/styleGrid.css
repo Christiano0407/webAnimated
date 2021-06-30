@@ -76,7 +76,7 @@ body {
     background-color: white;
     
 }
-
+/*Socials========Rotate======*/
 .socials {
     position: absolute;
     transform-origin: 0 0;
@@ -93,4 +93,50 @@ body {
 }
 .socials ul:is(:hover, :focus) {
     opacity: .7;
+}
+
+/*========= Image Grid ======*/
+
+.image-grid {
+    position: relative;
+
+    left: 10%;
+    width: 90%;
+    height: 100vh;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .5rem;
+}
+
+.overlay {
+   position: absolute;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(5, 102, 206, 0.112);
+   pointer-events: none;
+}
+
+.one {
+ background-image: url();
+}
+.two {
+
+}
+.three {
+
+}
+.four {
+
+}
+.five {
+
+}
+.six {
+    background-image: url();
+    background-position: 0 70%;
 }
