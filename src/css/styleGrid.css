@@ -1,3 +1,8 @@
+:root {
+    --clr-White: #ffffff; 
+    --clr-black: #000000; 
+
+}
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -12,6 +17,8 @@ ul {
 a {
     text-decoration:none;
     cursor: pointer;
+    color: var(--clr-White);
+    font-size: 0.8rem;
 }
 img {
   object-fit: cover;
@@ -22,4 +29,50 @@ img {
 
 body {
     font-family: 'Inter', sans-serif;
+    width: 100%;
+    background-color: var(--clr-black);
+}
+.side-bar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 10%; 
+  color: var(var(--clr-White))
+}
+/*Rotar la palabra =====*/
+.side-bar h2 {
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    top: 20%;
+    left: 50%;
+    
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translateY(-50%);
+}
+/*Menu Hamburguesa=====*/
+.menu-toggle {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 40px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+/*Menu Hamburguesa/ visual/línea =====*/
+.menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    
 }
