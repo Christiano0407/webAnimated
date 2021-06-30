@@ -76,3 +76,21 @@ body {
     background-color: white;
     
 }
+
+.socials {
+    position: absolute;
+    transform-origin: 0 0;
+
+    width: 350px;
+    left: 50%;
+    bottom: 0;
+
+    transform: rotate(-90deg) translateY(-50%);
+}
+.socials ul {
+    display: flex; 
+    justify-content: space-evenly;
+}
+.socials ul:is(:hover, :focus) {
+    opacity: .7;
+}
